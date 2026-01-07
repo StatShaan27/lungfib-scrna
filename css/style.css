@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 :root {
-  --accent: #1e40af;      /* deep academic blue */
-  --accent-light: #e8edff;
-  --text-main: #1f2937;
-  --text-muted: #6b7280;
-  --border: #e5e7eb;
-  --bg: #ffffff;
-  --bg-soft: #f9fafb;
+  --bg-dark: #0f172a;       /* deep slate */
+  --bg-light: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.08);
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-dark: #0f172a;
+  --accent: #38bdf8;       /* electric blue */
+  --border: rgba(255, 255, 255, 0.15);
 }
 
 * {
@@ -14,127 +17,114 @@
 
 body {
   margin: 0;
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  background: var(--bg-dark);
   color: var(--text-main);
-  background: var(--bg);
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-/* ---------- Header ---------- */
+/* ---------- HERO HEADER ---------- */
 
 header {
-  padding: 4rem 2rem 3rem;
-  background: linear-gradient(
-    180deg,
-    var(--accent-light),
-    #ffffff
-  );
+  padding: 6rem 2rem 5rem;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(56, 189, 248, 0.15),
+      transparent 40%
+    ),
+    var(--bg-dark);
   border-bottom: 1px solid var(--border);
 }
 
 header h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03em;
 }
 
 header .subtitle {
   max-width: 780px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--text-muted);
 }
 
-/* ---------- Navigation ---------- */
+/* ---------- NAV ---------- */
 
 nav {
   position: sticky;
   top: 0;
-  background: #ffffff;
+  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.85);
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem 2rem;
-  z-index: 10;
+  padding: 1rem 2rem;
+  z-index: 20;
 }
 
 nav a {
-  margin-right: 1.4rem;
+  margin-right: 1.6rem;
   text-decoration: none;
   color: var(--text-main);
   font-weight: 500;
-  position: relative;
+  transition: color 0.2s ease;
 }
 
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: var(--accent);
-  left: 0;
-  bottom: -4px;
-  transition: width 0.25s ease;
+nav a:hover {
+  color: var(--accent);
 }
 
-nav a:hover::after {
-  width: 100%;
-}
-
-/* ---------- Main Content ---------- */
+/* ---------- MAIN ---------- */
 
 main {
-  max-width: 1000px;
-  padding: 3rem 2rem;
+  max-width: 1100px;
   margin: auto;
+  padding: 4rem 2rem;
 }
 
-section {
-  margin-bottom: 3.5rem;
-}
-
-/* ---------- Section Cards ---------- */
+/* ---------- CARDS ---------- */
 
 .card {
-  background: var(--bg-soft);
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 2rem;
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .card h2 {
   margin-top: 0;
+  font-size: 1.8rem;
   color: var(--accent);
 }
 
-/* ---------- Emphasis Blocks ---------- */
+/* ---------- EMPHASIS ---------- */
 
 .highlight {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(56, 189, 248, 0.1);
   border-left: 4px solid var(--accent);
-  padding-left: 1.2rem;
-  color: var(--text-muted);
-  margin: 1.5rem 0;
-}
-
-/* ---------- Figures ---------- */
-
-figure {
-  margin: 2.5rem 0;
-}
-
-figure img {
-  max-width: 100%;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  color: var(--text-main);
 }
 
-figcaption {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
+/* ---------- LISTS ---------- */
+
+ul {
+  padding-left: 1.2rem;
 }
 
-/* ---------- Footer ---------- */
+li {
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- FOOTER ---------- */
 
 footer {
+  margin-top: 5rem;
+  padding: 2.5rem 2rem;
   border-top: 1px solid var(--border);
-  padding: 2rem;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
