@@ -10,7 +10,9 @@
 <header>
   <h1>LungFib scRNA-seq</h1>
   <p class="subtitle">
-    Single-cell RNA sequencing analysis of innate immune cell states in lung fibrosis
+    Single-cell RNA sequencing study of innate immune cell states in lung fibrosis,
+    with emphasis on transcriptional programs and regulatory mechanisms underlying
+    pro-fibrotic activation.
   </p>
 </header>
 
@@ -27,53 +29,153 @@
 
 <main>
 
+  <!-- Project Overview -->
   <section class="card">
-    <h2>Why this project?</h2>
+    <h2>Project Overview</h2>
     <p>
-      Chronic lung injury and inflammation can lead to fibrosis through persistent
-      activation of innate immune cells such as macrophages, neutrophils, and
-      dendritic cells. While fibrosis-associated pathways are known at the tissue
-      level, the <strong>cell-type–specific transcriptional programs</strong>
-      driving pro-fibrotic immune states remain incompletely characterized.
+      In lung tissue, chronic inflammation or injury can drive fibrosis through
+      aberrant activation of innate immune cells such as macrophages, neutrophils,
+      and dendritic cells. While fibrosis-associated pathways have been studied at
+      the tissue level, the <strong>cell-type–specific transcriptional programs and
+      transcription factors</strong> governing pro-fibrotic immune states remain
+      incompletely characterized.
+    </p>
+
+    <p>
+      This project employs <strong>single-cell RNA sequencing (scRNA-seq)</strong>
+      to resolve immune heterogeneity in lung tissue, identify immune subpopulations
+      most affected during fibrosis, characterize their gene expression profiles,
+      and infer regulatory transcription factors and pathways associated with
+      fibrotic remodeling.
+    </p>
+  </section>
+
+  <!-- Scientific Motivation -->
+  <section class="card">
+    <h2>Scientific Motivation</h2>
+    <p>
+      Fibrosis is a progressive and often irreversible pathological process underlying
+      multiple chronic lung diseases. Innate immune cells play a central role in
+      coordinating inflammatory and reparative responses; however, prolonged or
+      dysregulated activation can promote excessive extracellular matrix deposition
+      and tissue scarring.
     </p>
 
     <div class="highlight">
-      Bulk transcriptomics averages signals across heterogeneous populations.
-      Single-cell RNA sequencing resolves this heterogeneity and exposes
-      disease-relevant cellular states.
+      The key challenge is not the absence of fibrosis-associated genes, but the lack
+      of cell-type–resolved understanding of the regulatory programs driving
+      pro-fibrotic immune states.
     </div>
 
     <p>
-      This project uses scRNA-seq to identify immune subpopulations associated
-      with fibrosis, characterize their gene expression profiles, and explore
-      regulatory mechanisms underlying fibrotic remodeling.
+      By leveraging scRNA-seq, this project aims to bridge this gap by linking
+      immune cell identity, transcriptional state, and regulatory control.
     </p>
   </section>
 
+  <!-- Objectives -->
   <section class="card">
-    <h2>What we aim to do</h2>
+    <h2>Project Objectives</h2>
     <ul>
-      <li>Identify pro-fibrotic immune subpopulations</li>
+      <li>Identify innate immune cell subpopulations associated with pro-fibrotic activation</li>
       <li>Characterize transcriptional signatures at single-cell resolution</li>
-      <li>Investigate regulatory transcription factors and pathways</li>
-      <li>Maintain a reproducible, tutorial-style analysis framework</li>
+      <li>Explore fibrosis-related pathways and candidate regulatory transcription factors</li>
+      <li>Develop a reproducible, tutorial-style scRNA-seq analysis workflow</li>
+      <li>Lay the foundation for a publication-oriented computational study</li>
     </ul>
   </section>
 
+  <!-- Methodological Roadmap -->
   <section class="card">
-    <h2>Supervision</h2>
+    <h2>Methodological Roadmap</h2>
+
+    <h3>Phase I: Foundations</h3>
     <p>
-      <strong>Prof. Aritra Bhattacharya</strong><br>
+      The project begins with developing a strong foundation in computational genomics
+      and single-cell analysis. Initial learning is guided by structured online
+      resources, including an introductory book on computational genomics with R.
+    </p>
+
+    <h3>Phase II: scRNA-seq Analysis</h3>
+    <p>
+      Building on these foundations, the project progresses to hands-on scRNA-seq
+      analysis using R and Seurat, covering quality control, normalization,
+      dimensionality reduction, clustering, and cell-type annotation.
+    </p>
+
+    <h3>Phase III: Biological Interpretation and Regulation</h3>
+    <p>
+      Advanced stages focus on biological interpretation, pathway analysis, and
+      inference of transcriptional regulators implicated in fibrotic processes,
+      informed by existing literature and prior studies.
+    </p>
+  </section>
+
+  <!-- Resources -->
+  <section class="card">
+    <h2>Learning Resources and Literature</h2>
+
+    <p>
+      This project is supported by a curated set of learning resources and scientific
+      literature, all of which are documented and discussed within this website.
+    </p>
+
+    <ul>
+      <li>Online book on computational genomics and R (primary starting point)</li>
+      <li>Seurat tutorials and documentation for scRNA-seq analysis</li>
+      <li>Additional books and structured learning materials (to be added)</li>
+      <li>Selected research papers, including prior work relevant to fibrosis and regulation</li>
+    </ul>
+  </section>
+
+  <!-- Team -->
+  <section class="card">
+    <h2>Team and Supervision</h2>
+
+    <p>
+      This project is conducted collaboratively, integrating biological motivation
+      with statistical and computational expertise.
+    </p>
+
+    <ul>
+      <li><strong>Angik</strong> — MSc Thesis Student (Computational Biology, scRNA-seq)</li>
+      <li><strong>Sagnik</strong> — B.Stat Student, Indian Statistical Institute, Kolkata</li>
+      <li><strong>Shaan</strong> — B.Stat Student, Indian Statistical Institute, Kolkata</li>
+    </ul>
+
+    <p>
+      Sagnik and Shaan contribute expertise in R, data analysis, and statistical
+      reasoning, supporting scRNA-seq workflows and downstream interpretation.
+    </p>
+
+    <p>
+      <strong>Supervised by:</strong><br>
+      Prof. Aritra Bhattacharya<br>
       Human Genetics Unit<br>
       Indian Statistical Institute, Kolkata
     </p>
   </section>
 
+  <!-- Reproducibility -->
+  <section class="card">
+    <h2>Reproducibility and Future Direction</h2>
+    <p>
+      This website serves as a living research notebook. All datasets, analytical
+      decisions, learning resources, and interpretations are documented to ensure
+      transparency and reproducibility.
+    </p>
+
+    <p>
+      The project is designed to evolve from exploratory analysis toward a
+      publication-ready study, with updates reflecting the current state of work
+      as analyses mature.
+    </p>
+  </section>
+
 </main>
 
-
 <footer>
-  <p>© LungFib scRNA-seq Project</p>
+  © LungFib scRNA-seq Project
 </footer>
 
 </body>
