@@ -55,7 +55,7 @@ All interpretations are treated as provisional unless explicitly stated otherwis
 
 This repository is paired with a GitHub Pages website that hosts the rendered documentation and figures:
 
-> *(Link will appear here once GitHub Pages is enabled)*
+> https://statshaan27.github.io/lungfib-scrna/
 
 ---
 
