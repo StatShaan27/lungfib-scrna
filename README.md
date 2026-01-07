@@ -29,4 +29,49 @@ All interpretations are treated as provisional unless explicitly stated otherwis
 ---
 
 ## Repository Structure
+/
+├── biology/ # Biological background and motivation
+├── scrna-seq-basics/ # Conceptual foundations of scRNA-seq
+├── data/ # Dataset descriptions and metadata
+├── seurat-tutorial/ # Step-by-step Seurat analysis
+├── regulatory-analysis/ # Pathway and transcription factor analysis
+├── results/ # Results and biological insights
+├── reading-log/ # Papers, books, and learning notes
+├── reproducibility/ # Code, environments, and rerun instructions
+└── team/ # Contributors and acknowledgements
+
+---
+
+## Design Philosophy
+
+- **Explain concepts as they appear** (tutorial-style)
+- **Separate narrative from code**, while keeping full reproducibility
+- **Avoid overclaiming**; explicitly state assumptions and limitations
+- **Optimize for longevity** (MSc → publication → PhD applications)
+
+---
+
+## Website
+
+This repository is paired with a GitHub Pages website that hosts the rendered documentation and figures:
+
+> *(Link will appear here once GitHub Pages is enabled)*
+
+---
+
+## Contributors
+
+- Angik  
+- Sagnik  
+- Shaan  
+
+**Supervision:** Prof. Aritra Bhattacharya  
+Human Genetics Unit, Indian Statistical Institute, Kolkata
+
+
+---
+
+## License
+
+This project is released under the **MIT License**. See `LICENSE` for details.
 
