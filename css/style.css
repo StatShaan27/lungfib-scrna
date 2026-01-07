@@ -1,48 +1,141 @@
-body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  background: #ffffff;
-  color: #222;
+:root {
+  --accent: #1e40af;      /* deep academic blue */
+  --accent-light: #e8edff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --bg-soft: #f9fafb;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-main);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+/* ---------- Header ---------- */
 
 header {
-  padding: 2rem;
-  border-bottom: 1px solid #ddd;
+  padding: 4rem 2rem 3rem;
+  background: linear-gradient(
+    180deg,
+    var(--accent-light),
+    #ffffff
+  );
+  border-bottom: 1px solid var(--border);
 }
 
-.subtitle {
-  color: #555;
-  max-width: 800px;
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
 }
+
+header .subtitle {
+  max-width: 780px;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Navigation ---------- */
 
 nav {
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  z-index: 10;
 }
 
 nav a {
-  margin-right: 1.2rem;
+  margin-right: 1.4rem;
   text-decoration: none;
-  color: #004aad;
+  color: var(--text-main);
+  font-weight: 500;
+  position: relative;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  left: 0;
+  bottom: -4px;
+  transition: width 0.25s ease;
 }
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- Main Content ---------- */
 
 main {
-  max-width: 900px;
-  padding: 2rem;
+  max-width: 1000px;
+  padding: 3rem 2rem;
+  margin: auto;
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 
+/* ---------- Section Cards ---------- */
+
+.card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+/* ---------- Emphasis Blocks ---------- */
+
+.highlight {
+  border-left: 4px solid var(--accent);
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  margin: 1.5rem 0;
+}
+
+/* ---------- Figures ---------- */
+
+figure {
+  margin: 2.5rem 0;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+/* ---------- Footer ---------- */
+
 footer {
-  border-top: 1px solid #eee;
-  padding: 1rem 2rem;
-  color: #666;
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
